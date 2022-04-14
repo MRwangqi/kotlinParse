@@ -3,3 +3,7 @@ demo，使用的是 [kastree](https://github.com/cretz/kastree) 来实现
 
 运行 [KtParse](src/main/java/KtParse.kt) 会在根目录生成一个 [component.json](component.json) 文件
 
+
+
+如果想静态解析 java 文件的话，可以使用 [javaparser](https://github.com/javaparser/javaparser)
+
