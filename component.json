@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "className": "com.codelang.components.CComponent",
+      "dependency": "com.aa.bb",
+      "name": "lisi",
+      "version": "2.0.0"
+    },
+    {
+      "className": "com.codelang.components.AComponent",
+      "dependency": "com.aa.bb",
+      "name": "zhangsan",
+      "verifiedContainer": [
+        "list",
+        "homeContainer"
+      ],
+      "verifiedProtocol": [
+        "public"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "className": "com.codelang.components.BComponent",
+      "dependency": "com.aa.bb",
+      "name": "list",
+      "verifiedProtocol": [
+        "private"
+      ],
+      "version": "1.0.1"
+    }
+  ]
+}

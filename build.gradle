@@ -1,0 +1,30 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven{
+        url("https://jitpack.io")
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation 'com.github.cretz.kastree:kastree-ast-jvm:0.4.0'
+    implementation 'com.github.cretz.kastree:kastree-ast-psi:0.4.0'
+    implementation 'com.github.cretz.kastree:kastree-ast-common:0.4.0'
+
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+}
+
+test {
+    useJUnitPlatform()
+}
